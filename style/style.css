@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.navbar {
+  background: rgba(0, 0, 0, 0.3) !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+.nav-item a {
+  color: #fff !important;
+  font-size: 22px;
+}
+.nav-item a:hover {
+  color: dodgerblue !important;
+}
+
+.navbar-brand img {
+  width: 120px;
+}
+
+.container {
+  background: transparent;
+  width: 800px;
+  height: 300px;
+  color: #fff;
+  position: absolute;
+  top: 8%;
+  left: 50%;
+  transform: translate(-50%, -8%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container h1 {
+  font-size: 92px;
+  text-shadow: 0 1px 0 rgb(204, 204, 204), 0 2px 0 #c9c9c9, 0 3px 0 #bbb,
+    0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1),
+    0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3),
+    0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25),
+    0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15);
+}
+
+.container span {
+  color: rgb(26, 147, 228);
+  text-shadow: 0 1px 0 rgb(14, 129, 211), 0 2px 0 rgb(14, 129, 211),
+    0 3px 0 rgb(14, 129, 211), 0 4px 0 rgb(14, 129, 211),
+    0 5px 0 rgb(14, 129, 211), 0 6px 1px rgba(0, 0, 0, 0.1),
+    0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3),
+    0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25),
+    0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15);
+}
+
+.container button {
+  font-size: 23px;
+  font-weight: bold;
+  width: 200px;
+  height: 50px;
+  margin-top: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.form-control {
+  background: #fff;
+  opacity: 0.5;
+}
+
+.form-control:focus {
+  background: #fff;
+  opacity: 0.6;
+}
+
+video {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.card img {
+  height: 426px;
+  object-fit: cover;
+}
+
+.social-icons {
+  position: absolute;
+  top: 90%;
+  right: 2%;
+  transform: translate(-2%, -90%);
+  color: #fff;
+}
+
+.icon-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  background: rgba(0, 0, 0, 0.4);
+  width: 100px;
+  height: 300px;
+  border-radius: 20px;
+}
+
+.social-icons .icon-box i {
+  font-size: 34px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.social-icons .icon-box i:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 778px) {
+  .container h1 {
+    font-size: 64px;
+  }
+}
+@media (max-width: 375px) {
+  .navbar {
+    background: rgba(0, 0, 0, 0.7) !important;
+  }
+  .container h1 {
+    font-size: 44px;
+  }
+  .social-icons .icon-box i {
+    font-size: 30px;
+  }
+  .container button {
+    font-size: 20px;
+    width: 150px;
+  }
+  .social-icons {
+    top: 95%;
+    right: 2%;
+    transform: translate(-2%, -95%);
+  }
+  .card img {
+    height: 250px;
+  }
+}
